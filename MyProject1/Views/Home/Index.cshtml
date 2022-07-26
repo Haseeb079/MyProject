@@ -1,19 +1,15 @@
-﻿@{
-    ViewData["Title"] = "Home Page";
-}
+﻿
 <!DOCTYPE html>
 <html lang="en">
 <head>
    <meta charset="UTF-8">
    <meta http-equiv="X-UA-Compatible" content="IE=edge">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <title>Complete Responsive Pizza Shop Website Design</title>
+   <title>Pizza Website</title>
 
-   <!-- font awesome cdn link  -->
-   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
-
-   <!-- custom css file link  -->
-   <link rel="stylesheet" href="css/style.css">
+   
+   
+   <link rel="stylesheet" href="/css/style.css">
 
 </head>
 <body>
@@ -28,15 +24,14 @@
 
       <nav class="navbar">
          <a href="#home">Home</a>
-         <a href="#about">About</a>
+         <button> About </button>
          <a href="#menu">Menu</a>
          <a href="#order">Order</a>
       </nav>
+      <button class="btn" onclick="window.open('@Url.Action("index1")'> </button>
 
       <div class="icons">
-         <div id="menu-btn" class="fas fa-bars"></div>
-         <div id="user-btn" class="fas fa-user"></div>
-         <div id="order-btn" class="fas fa-box"></div>
+         
          <div id="cart-btn" class="fas fa-shopping-cart"></div>
       </div>
 
@@ -50,11 +45,11 @@
 
    <section class="home" id="home">
 
-      <div class="slide">
+      <div class="home">
           </div>
-         <div class="slide">
+         <div class="home">
             <div class="image">
-               <img src="images/home-img-1.png" alt="">
+               <img src="/images/home-bg.jpg" alt=""width="100%" height="750vh">
             </div>
             <div class="content">
                
@@ -106,8 +101,8 @@
 
       <div class="box">
          <div class="price"><span>1400</span>/</div>
-         <img src="images/pizza-1.jpg" alt="">
-         <div class="name">Tikka</div>
+         <img src="images/pizza-1.jpg" width="700px " alt="">
+         <div class="name">Pizza 1</div>
          <form action="" method="post">
            
             <input type="submit" value="add to cart" name="add_to_cart" class="btn">
@@ -116,8 +111,8 @@
 
       <div class="box">
          <div class="price"><span>1350</span>/</div>
-         <img src="images/pizza-2.jpg" alt="">
-         <div class="name">Mallai</div>
+         <img src="images/pizza-2.jpg" width="700px" alt="">
+         <div class="name">Pizza 2</div>
          <form action="" method="post">
             
             <input type="submit" value="add to cart" name="add_to_cart" class="btn">
@@ -126,8 +121,8 @@
 
       <div class="box">
          <div class="price"><span>1400</span>/</div>
-         <img src="images/pizza-3.jpg" alt="">
-         <div class="name">Hot and Spicy</div>
+         <img src="images/pizza-3.jpg" width="700px" alt="">
+         <div class="name">Pizza 3</div>
          <form action="" method="post">
            
             <input type="submit" value="add to cart" name="add_to_cart" class="btn">
@@ -136,8 +131,8 @@
 
       <div class="box">
          <div class="price"><span>1500</span>/</div>
-         <img src="images/pizza-4.jpg" alt="">
-         <div class="name">Mexico</div>
+         <img src="images/pizza-4.jpg"width="700px" alt="">
+         <div class="name">Pizza 4</div>
          <form action="" method="post">
            
             <input type="submit" value="add to cart" name="add_to_cart" class="btn">
@@ -146,8 +141,8 @@
 
       <div class="box">
          <div class="price"><span>1600</span>/</div>
-         <img src="images/pizza-5.jpg" alt="">
-         <div class="name">Smoke</div>
+         <img src="images/pizza-5.jpg" width="700px" alt="">
+         <div class="name">Pizza 5</div>
          <form action="" method="post">
             
             <input type="submit" value="add to cart" name="add_to_cart" class="btn">
@@ -156,8 +151,8 @@
 
       <div class="box">
          <div class="price"><span>1550</span>/</div>
-         <img src="images/pizza-6.jpg" alt="">
-         <div class="name">Donner</div>
+         <img src="images/pizza-6.jpg"width="700px" alt="">
+         <div class="name">Pizza 6</div>
          <form action="" method="post">
             
             <input type="submit" value="add to cart" name="add_to_cart" class="btn">
@@ -168,9 +163,6 @@
 
 </section>
 
-<!-- menu section ends -->
-
-<!-- order section starts  -->
 
 <section class="order" id="order">
 
@@ -199,12 +191,12 @@
          </div>
          <div class="inputBox">
             <span>address:</span>
-            <input type="text" name="flat" class="box" required placeholder="e.g. flat no." maxlength="50">
+            <input type="text" name="flat" class="box" required placeholder="House Number" maxlength="50">
          </div>
         
          <div class="inputBox">
             <span>pin code :</span>
-            <input type="number" name="pin_code" class="box" required placeholder="e.g. 123456" min="0">
+            <input type="number" name="pin_code" class="box" required placeholder=" 123456" min="0">
          </div>
       </div>
 
@@ -233,7 +225,7 @@
       <div class="box">
          <i class="fas fa-clock"></i>
          <h3>opening hours</h3>
-         <p>00:09am to 00:10pm</p>
+         <p>10:00am to 11:00pm</p>
       </div>
 
       <div class="box">
@@ -245,12 +237,13 @@
 
    </div>
 
-   <div class="credit">
-      &copy; copyright 2022 
+    <div class="credit">
+      &copy; copyright @ 2022 
    </div>
 
+
 </section>
-<script src="js/script.js"></script>
+
 
 </body>
 </html>
